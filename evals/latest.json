@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-28T06:43:56.844Z",
+  "promptVersion": "v2-memory",
+  "models": {
+    "chat": "claude-sonnet-5-5",
+    "fast": "claude-haiku-5-5"
+  },
+  "window": 4,
+  "runs": 1,
+  "script": [
+    "Quick context: I work nights, 7pm to 7am, three shifts a week. My Night Shift Strong program launches November 17 and I want 150 buyers. Please stop suggesting morning routine content, it makes no sense for my audience. And no before and after body photos, ever.",
+    "Give me 5 Instagram post ideas for this week.",
+    "Cool, I already posted the locker snacks one. Give me 5 more ideas.",
+    "Give me 5 more, different from before.",
+    "One more batch of 5 ideas please.",
+    "Remind me, when does my program launch and what is my buyer goal?",
+    "Write me an Instagram caption about training through a 4-night stretch."
+  ],
+  "thresholds": {
+    "repeatRate": 0.1,
+    "violationRate": 0.05,
+    "recall": 1,
+    "voice": 70
+  },
+  "stateless": {
+    "ideas": 20,
+    "repeats": 1,
+    "violations": 0,
+    "repeatRate": 0.05,
+    "violationRate": 0,
+    "recall": 0.5,
+    "voice": 51,
+    "slopFlags": 0,
+    "held": 0,
+    "revised": false,
+    "ms": 73191,
+    "examples": {
+      "repeats": [
+        "Steps are not strength  ~  Walking 20,000 steps is not training"
+      ],
+      "violations": [],
+      "recallReply": "I don't have either one. Night Shift Strong is live on Stan Store at $49 for 8 weeks, but there's no launch date or buyer goal in what's synced to me, and I shouldn't guess. The Nov 17 date I mentioned earlier was a mistake on my part. If you give me a target date and a number of buyers, I'll work backward into a posting plan. Your last post was Oct 20, so a couple of posts this week would also help.",
+      "draft": "4 nights in a row. Here's how I train through it.\n\nBefore night 1: the real session. 40 minutes, while you still have a working brain.\n\nNights 2 and 3: 20 minutes before shift, or nothing. Split squat, incline push-up, band row. Done.\n\nAfter night 4: sleep. Do not lift. Nobody has ever hit a PR on zero hours of sleep.\n\nThe goal isn't a perfect week. The goal is 3 sessions that actually happen.\n\nSave this for your next stretch of nights.\n\nWhat does your 4-night stretch look like right now?"
+    }
+  },
+  "memory": {
+    "ideas": 20,
+    "repeats": 0,
+    "violations": 0,
+    "repeatRate": 0,
+    "violationRate": 0,
+    "recall": 1,
+    "voice": 75,
+    "slopFlags": 0,
+    "held": 3,
+    "revised": true,
+    "ms": 122013,
+    "examples": {
+      "repeats": [],
+      "violations": [],
+      "recallReply": "Night Shift Strong launches November 17, which is 20 days from today (Oct 28). Your goal is 150 buyers at $49. Also, a correction: those last two batches were repeats of ideas I'd already pitched you, and my counts were off. Want a fresh set of 8 that are actually new, built around the launch?",
+      "draft": "Four nights in a row.\n\nI lift once before night 1. Once on the first day off. Nothing in between.\n\nI walk the unit, eat on time, protect sleep.\n\nLongest stretch of nights you've worked?"
+    }
+  },
+  "gates": {
+    "repeatRate": true,
+    "violationRate": true,
+    "recall": true,
+    "voice": true
+  },
+  "pass": true
+}
